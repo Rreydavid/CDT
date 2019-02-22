@@ -101,9 +101,9 @@
 			children = (
 				63ED20852204BA57003005BA /* AppDelegate.swift */,
 				63ED20872204BA57003005BA /* ViewController.swift */,
-				63ED20892204BA57003005BA /* Main.storyboard */,
 				63ED208F2204BA59003005BA /* Assets.xcassets */,
 				63ED20912204BA59003005BA /* LaunchScreen.storyboard */,
+				63ED20892204BA57003005BA /* Main.storyboard */,
 				63ED20942204BA59003005BA /* Info.plist */,
 				63ED208C2204BA57003005BA /* iScout.xcdatamodeld */,
 			);
