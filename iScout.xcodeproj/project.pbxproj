@@ -8,8 +8,13 @@
 
 /* Begin PBXBuildFile section */
 		6318043E223FDE1700611BB7 /* Places.plist in Resources */ = {isa = PBXBuildFile; fileRef = 6318043D223FDE1700611BB7 /* Places.plist */; };
+		63180440224013CB00611BB7 /* TabBarViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6318043F224013CB00611BB7 /* TabBarViewController.swift */; };
+		631804422240176E00611BB7 /* SyncViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 631804412240176E00611BB7 /* SyncViewController.swift */; };
+		6318044422402F4C00611BB7 /* VitalsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6318044322402F4C00611BB7 /* VitalsViewController.swift */; };
+		63BF229F22406CD000804460 /* CommandCenterViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63BF229E22406CD000804460 /* CommandCenterViewController.swift */; };
+		63BF22A222407A6000804460 /* CocTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63BF22A122407A6000804460 /* CocTableViewCell.swift */; };
 		63ED20862204BA57003005BA /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63ED20852204BA57003005BA /* AppDelegate.swift */; };
-		63ED20882204BA57003005BA /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63ED20872204BA57003005BA /* ViewController.swift */; };
+		63ED20882204BA57003005BA /* MapViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63ED20872204BA57003005BA /* MapViewController.swift */; };
 		63ED208B2204BA57003005BA /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 63ED20892204BA57003005BA /* Main.storyboard */; };
 		63ED208E2204BA57003005BA /* iScout.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 63ED208C2204BA57003005BA /* iScout.xcdatamodeld */; };
 		63ED20902204BA59003005BA /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 63ED208F2204BA59003005BA /* Assets.xcassets */; };
@@ -37,9 +42,14 @@
 
 /* Begin PBXFileReference section */
 		6318043D223FDE1700611BB7 /* Places.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Places.plist; sourceTree = "<group>"; };
+		6318043F224013CB00611BB7 /* TabBarViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabBarViewController.swift; sourceTree = "<group>"; };
+		631804412240176E00611BB7 /* SyncViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SyncViewController.swift; sourceTree = "<group>"; };
+		6318044322402F4C00611BB7 /* VitalsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VitalsViewController.swift; sourceTree = "<group>"; };
+		63BF229E22406CD000804460 /* CommandCenterViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CommandCenterViewController.swift; sourceTree = "<group>"; };
+		63BF22A122407A6000804460 /* CocTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CocTableViewCell.swift; sourceTree = "<group>"; };
 		63ED20822204BA57003005BA /* iScout.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = iScout.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		63ED20852204BA57003005BA /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		63ED20872204BA57003005BA /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		63ED20872204BA57003005BA /* MapViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapViewController.swift; sourceTree = "<group>"; };
 		63ED208A2204BA57003005BA /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		63ED208D2204BA57003005BA /* iScout.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = iScout.xcdatamodel; sourceTree = "<group>"; };
 		63ED208F2204BA59003005BA /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -78,6 +88,34 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		631804452240322400611BB7 /* GPSdata */ = {
+			isa = PBXGroup;
+			children = (
+				6318043D223FDE1700611BB7 /* Places.plist */,
+			);
+			path = GPSdata;
+			sourceTree = "<group>";
+		};
+		6318044A2240422400611BB7 /* ViewControllers */ = {
+			isa = PBXGroup;
+			children = (
+				6318043F224013CB00611BB7 /* TabBarViewController.swift */,
+				63BF229E22406CD000804460 /* CommandCenterViewController.swift */,
+				63ED20872204BA57003005BA /* MapViewController.swift */,
+				631804412240176E00611BB7 /* SyncViewController.swift */,
+				6318044322402F4C00611BB7 /* VitalsViewController.swift */,
+			);
+			path = ViewControllers;
+			sourceTree = "<group>";
+		};
+		63BF22A022407A4000804460 /* CustomCells */ = {
+			isa = PBXGroup;
+			children = (
+				63BF22A122407A6000804460 /* CocTableViewCell.swift */,
+			);
+			path = CustomCells;
+			sourceTree = "<group>";
+		};
 		63ED20792204BA57003005BA = {
 			isa = PBXGroup;
 			children = (
@@ -102,13 +140,14 @@
 			isa = PBXGroup;
 			children = (
 				63ED20852204BA57003005BA /* AppDelegate.swift */,
-				63ED20872204BA57003005BA /* ViewController.swift */,
+				631804452240322400611BB7 /* GPSdata */,
+				63BF22A022407A4000804460 /* CustomCells */,
+				6318044A2240422400611BB7 /* ViewControllers */,
 				63ED208F2204BA59003005BA /* Assets.xcassets */,
 				63ED20912204BA59003005BA /* LaunchScreen.storyboard */,
 				63ED20892204BA57003005BA /* Main.storyboard */,
 				63ED20942204BA59003005BA /* Info.plist */,
 				63ED208C2204BA57003005BA /* iScout.xcdatamodeld */,
-				6318043D223FDE1700611BB7 /* Places.plist */,
 			);
 			path = iScout;
 			sourceTree = "<group>";
@@ -263,9 +302,14 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				63ED20882204BA57003005BA /* ViewController.swift in Sources */,
+				63BF229F22406CD000804460 /* CommandCenterViewController.swift in Sources */,
+				63180440224013CB00611BB7 /* TabBarViewController.swift in Sources */,
+				63ED20882204BA57003005BA /* MapViewController.swift in Sources */,
 				63ED20862204BA57003005BA /* AppDelegate.swift in Sources */,
 				63ED208E2204BA57003005BA /* iScout.xcdatamodeld in Sources */,
+				63BF22A222407A6000804460 /* CocTableViewCell.swift in Sources */,
+				631804422240176E00611BB7 /* SyncViewController.swift in Sources */,
+				6318044422402F4C00611BB7 /* VitalsViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
