@@ -9,3 +9,14 @@
 // Food, Water, Living Tents, etc...
 
 import Foundation
+import UIKit
+
+class CommandCenterViewController: UIViewController {
+    
+    override func viewDidLoad() {
+        super.viewDidLoad()
+        // Do any additional setup after loading the view, typically from a nib.
+    }
+    
+    
+}
