@@ -11,6 +11,9 @@ import UIKit
 
 class CocTableViewCell : UITableViewCell{
 
+    @IBOutlet weak var labelLat: UILabel!
+    @IBOutlet weak var labelLong: UILabel!
+    @IBOutlet weak var buttonSetGPS: UIButton!
     
     override func awakeFromNib() {
         super.awakeFromNib()
