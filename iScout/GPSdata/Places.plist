@@ -1,14 +1,32 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<!DOCTYPE plist PUBLIC "-//Apple Computer//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
-<!--
-   Places.plist
-   iScout
-
-   Created by David Mercado on 3/18/19.
-   Copyright (c) 2019 CDT. All rights reserved.
--->
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
 <plist version="1.0">
-    <dict>
-    
-    </dict>
+<array>
+	<string>{38.03939,-84.50666}</string>
+	<string>{38.04118,-84.50387}</string>
+	<string>{38.04003,-84.50241}</string>
+	<string>{38.03888,-84.50091}</string>
+	<string>{38.03787,-84.49984}</string>
+	<string>{38.03686,-84.49872}</string>
+	<string>{38.03577,-84.49735}</string>
+	<string>{38.03432,-84.49585}</string>
+	<string>{38.03314,-84.49791}</string>
+	<string>{38.0325,-84.49911}</string>
+	<string>{38.03337,-84.50001}</string>
+	<string>{38.03432,-84.50113}</string>
+	<string>{38.03496,-84.50181}</string>
+	<string>{38.03554,-84.50276}</string>
+	<string>{38.0349,-84.50387}</string>
+	<string>{38.03412,-84.50482}</string>
+	<string>{38.03337,-84.50589}</string>
+	<string>{38.0327,-84.50705}</string>
+	<string>{38.03185,-84.50821}</string>
+	<string>{38.03138,-84.50902}</string>
+	<string>{38.03172,-84.50949}</string>
+	<string>{38.03351,-84.50876}</string>
+	<string>{38.03496,-84.50825}</string>
+	<string>{38.03662,-84.50765}</string>
+	<string>{38.03838,-84.50713}</string>
+	<string>{38.03888,-84.50628}</string>
+</array>
 </plist>
