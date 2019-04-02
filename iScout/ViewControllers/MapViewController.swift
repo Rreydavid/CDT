@@ -14,14 +14,22 @@ import MapKit
 class MapViewController: UIViewController {
     
     @IBOutlet weak var MapView: MKMapView!
-    
-    //var park = Park(filename: "Places")
+    var lex = Lexington(filename: "Places")
     //var selectedOptions : [MapOptionsType] = []
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view, typically from a nib.
+        
+        let latDelta = lex.overlayTopLeftCoordinate.latitude -
+            lex.overlayBottomRightCoordinate.latitude
+        
+        // Think of a span as a tv size, measure from one corner to another
+        let span = MKCoordinateSpan(latitudeDelta: fabs(latDelta), longitudeDelta: 0.0)
+        let region = MKCoordinateRegion(center: lex.midCoordinate, span: span)
+        
+        MapView.region = region
     }
+
 
     @IBAction func mapTypeChange(_ sender: UISegmentedControl) {
         MapView.mapType = MKMapType.init(rawValue: UInt(sender.selectedSegmentIndex)) ?? .standard
