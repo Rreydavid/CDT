@@ -30,9 +30,15 @@ class MapViewController: UIViewController {
         MapView.region = region
     }
 
-
     @IBAction func mapTypeChange(_ sender: UISegmentedControl) {
         MapView.mapType = MKMapType.init(rawValue: UInt(sender.selectedSegmentIndex)) ?? .standard
+    }
+    
+    // the method MapView.add() was out of date, and was replaced with MapView.addOverlay()
+    // this method may no longer be needed
+    func addOverlay() {
+        let overlay = MapOverlay(area: lex)
+        MapView.addOverlay(overlay)
     }
     
     /*func addRoute() {
@@ -50,6 +56,8 @@ class MapViewController: UIViewController {
         MapView.removeAnnotations(MapView.annotations)
         MapView.removeOverlays(MapView.overlays)
         
+        // still needs to be implemented
+        // need to decide how user will select things to be added to map
         /*for option in selectedOptions {
             switch (option) {
             case .mapOverlay:

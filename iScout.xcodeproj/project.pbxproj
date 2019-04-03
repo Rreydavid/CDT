@@ -22,6 +22,8 @@
 		63ED209E2204BA59003005BA /* iScoutTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63ED209D2204BA59003005BA /* iScoutTests.swift */; };
 		63ED20A92204BA59003005BA /* iScoutUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63ED20A82204BA59003005BA /* iScoutUITests.swift */; };
 		6E9D3D9F2252EDAA00DAA888 /* Lexington.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6E9D3D9E2252EDAA00DAA888 /* Lexington.swift */; };
+		6EC23D1022544CE7002B9C0F /* MapOverlay.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6EC23D0F22544CE7002B9C0F /* MapOverlay.swift */; };
+		6EC23D1222544D73002B9C0F /* MapOverlayView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6EC23D1122544D73002B9C0F /* MapOverlayView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -63,6 +65,8 @@
 		63ED20A82204BA59003005BA /* iScoutUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = iScoutUITests.swift; sourceTree = "<group>"; };
 		63ED20AA2204BA59003005BA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		6E9D3D9E2252EDAA00DAA888 /* Lexington.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Lexington.swift; sourceTree = "<group>"; };
+		6EC23D0F22544CE7002B9C0F /* MapOverlay.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapOverlay.swift; sourceTree = "<group>"; };
+		6EC23D1122544D73002B9C0F /* MapOverlayView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapOverlayView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -141,6 +145,7 @@
 		63ED20842204BA57003005BA /* iScout */ = {
 			isa = PBXGroup;
 			children = (
+				6EC23D0E22544C9E002B9C0F /* Overlays */,
 				6E9D3D9D2252ED8E00DAA888 /* Models */,
 				63ED20852204BA57003005BA /* AppDelegate.swift */,
 				631804452240322400611BB7 /* GPSdata */,
@@ -179,6 +184,15 @@
 				6E9D3D9E2252EDAA00DAA888 /* Lexington.swift */,
 			);
 			path = Models;
+			sourceTree = "<group>";
+		};
+		6EC23D0E22544C9E002B9C0F /* Overlays */ = {
+			isa = PBXGroup;
+			children = (
+				6EC23D0F22544CE7002B9C0F /* MapOverlay.swift */,
+				6EC23D1122544D73002B9C0F /* MapOverlayView.swift */,
+			);
+			path = Overlays;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -318,10 +332,12 @@
 				63ED20882204BA57003005BA /* MapViewController.swift in Sources */,
 				63ED20862204BA57003005BA /* AppDelegate.swift in Sources */,
 				6E9D3D9F2252EDAA00DAA888 /* Lexington.swift in Sources */,
+				6EC23D1222544D73002B9C0F /* MapOverlayView.swift in Sources */,
 				63ED208E2204BA57003005BA /* iScout.xcdatamodeld in Sources */,
 				63BF22A222407A6000804460 /* CocTableViewCell.swift in Sources */,
 				631804422240176E00611BB7 /* SyncViewController.swift in Sources */,
 				6318044422402F4C00611BB7 /* VitalsViewController.swift in Sources */,
+				6EC23D1022544CE7002B9C0F /* MapOverlay.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
