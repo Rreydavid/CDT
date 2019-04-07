@@ -25,6 +25,7 @@
 		63FEDECC225A8507001DE578 /* LegendAnnotationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63FEDECB225A8507001DE578 /* LegendAnnotationView.swift */; };
 		63FEDECE225A85BD001DE578 /* MapLayersViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63FEDECD225A85BD001DE578 /* MapLayersViewController.swift */; };
 		63FEDED0225A98EE001DE578 /* Lexington.plist in Resources */ = {isa = PBXBuildFile; fileRef = 63FEDECF225A98EE001DE578 /* Lexington.plist */; };
+		63FEDED2225AB51A001DE578 /* SyncTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63FEDED1225AB51A001DE578 /* SyncTableViewCell.swift */; };
 		6E9D3D9F2252EDAA00DAA888 /* Lexington.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6E9D3D9E2252EDAA00DAA888 /* Lexington.swift */; };
 		6EC23D1022544CE7002B9C0F /* MapOverlay.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6EC23D0F22544CE7002B9C0F /* MapOverlay.swift */; };
 		6EC23D1222544D73002B9C0F /* MapOverlayView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6EC23D1122544D73002B9C0F /* MapOverlayView.swift */; };
@@ -72,6 +73,7 @@
 		63FEDECB225A8507001DE578 /* LegendAnnotationView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LegendAnnotationView.swift; sourceTree = "<group>"; };
 		63FEDECD225A85BD001DE578 /* MapLayersViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapLayersViewController.swift; sourceTree = "<group>"; };
 		63FEDECF225A98EE001DE578 /* Lexington.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Lexington.plist; sourceTree = "<group>"; };
+		63FEDED1225AB51A001DE578 /* SyncTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SyncTableViewCell.swift; sourceTree = "<group>"; };
 		6E9D3D9E2252EDAA00DAA888 /* Lexington.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Lexington.swift; sourceTree = "<group>"; };
 		6EC23D0F22544CE7002B9C0F /* MapOverlay.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapOverlay.swift; sourceTree = "<group>"; };
 		6EC23D1122544D73002B9C0F /* MapOverlayView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapOverlayView.swift; sourceTree = "<group>"; };
@@ -127,6 +129,7 @@
 			isa = PBXGroup;
 			children = (
 				63BF22A122407A6000804460 /* CocTableViewCell.swift */,
+				63FEDED1225AB51A001DE578 /* SyncTableViewCell.swift */,
 			);
 			path = CustomCells;
 			sourceTree = "<group>";
@@ -363,6 +366,7 @@
 				6EC23D1222544D73002B9C0F /* MapOverlayView.swift in Sources */,
 				63ED208E2204BA57003005BA /* iScout.xcdatamodeld in Sources */,
 				63BF22A222407A6000804460 /* CocTableViewCell.swift in Sources */,
+				63FEDED2225AB51A001DE578 /* SyncTableViewCell.swift in Sources */,
 				631804422240176E00611BB7 /* SyncViewController.swift in Sources */,
 				6EC23D1022544CE7002B9C0F /* MapOverlay.swift in Sources */,
 			);
