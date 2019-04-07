@@ -42,10 +42,10 @@ class Lexington {
         guard let properties = Lexington.plist(filename) as? [String : Any],
             let boundaryPoints = properties["boundary"] as? [String] else { return }
         
-        midCoordinate = Lexington.parseCoord(dict: properties, fieldName: "Item 26")
-        overlayTopLeftCoordinate = Lexington.parseCoord(dict: properties, fieldName: "Item 27")
-        overlayTopRightCoordinate = Lexington.parseCoord(dict: properties, fieldName: "Item 29")
-        overlayBottomLeftCoordinate = Lexington.parseCoord(dict: properties, fieldName: "Item 28")
+        midCoordinate = Lexington.parseCoord(dict: properties, fieldName: "midCoord")
+        overlayTopLeftCoordinate = Lexington.parseCoord(dict: properties, fieldName: "overlayTopLeftCoord")
+        overlayTopRightCoordinate = Lexington.parseCoord(dict: properties, fieldName: "overlayTopRightCoord")
+        overlayBottomLeftCoordinate = Lexington.parseCoord(dict: properties, fieldName: "overlayBottomLeftCoord")
         
         let cgPoints = boundaryPoints.map { NSCoder.cgPoint(for: $0) }
         boundary = cgPoints.map { CLLocationCoordinate2DMake(CLLocationDegrees($0.x), CLLocationDegrees($0.y)) }
