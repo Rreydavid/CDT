@@ -10,7 +10,6 @@
 		6318043E223FDE1700611BB7 /* Places.plist in Resources */ = {isa = PBXBuildFile; fileRef = 6318043D223FDE1700611BB7 /* Places.plist */; };
 		63180440224013CB00611BB7 /* TabBarViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6318043F224013CB00611BB7 /* TabBarViewController.swift */; };
 		631804422240176E00611BB7 /* SyncViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 631804412240176E00611BB7 /* SyncViewController.swift */; };
-		6318044422402F4C00611BB7 /* VitalsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6318044322402F4C00611BB7 /* VitalsViewController.swift */; };
 		63BF229F22406CD000804460 /* CommandCenterViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63BF229E22406CD000804460 /* CommandCenterViewController.swift */; };
 		63BF22A222407A6000804460 /* CocTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63BF22A122407A6000804460 /* CocTableViewCell.swift */; };
 		63ED20862204BA57003005BA /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63ED20852204BA57003005BA /* AppDelegate.swift */; };
@@ -21,6 +20,11 @@
 		63ED20932204BA59003005BA /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 63ED20912204BA59003005BA /* LaunchScreen.storyboard */; };
 		63ED209E2204BA59003005BA /* iScoutTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63ED209D2204BA59003005BA /* iScoutTests.swift */; };
 		63ED20A92204BA59003005BA /* iScoutUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63ED20A82204BA59003005BA /* iScoutUITests.swift */; };
+		63FEDEC7225A815F001DE578 /* Character.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63FEDEC6225A815F001DE578 /* Character.swift */; };
+		63FEDECA225A83D7001DE578 /* LegendAnnotation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63FEDEC9225A83D7001DE578 /* LegendAnnotation.swift */; };
+		63FEDECC225A8507001DE578 /* LegendAnnotationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63FEDECB225A8507001DE578 /* LegendAnnotationView.swift */; };
+		63FEDECE225A85BD001DE578 /* MapLayersViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63FEDECD225A85BD001DE578 /* MapLayersViewController.swift */; };
+		63FEDED0225A98EE001DE578 /* Lexington.plist in Resources */ = {isa = PBXBuildFile; fileRef = 63FEDECF225A98EE001DE578 /* Lexington.plist */; };
 		6E9D3D9F2252EDAA00DAA888 /* Lexington.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6E9D3D9E2252EDAA00DAA888 /* Lexington.swift */; };
 		6EC23D1022544CE7002B9C0F /* MapOverlay.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6EC23D0F22544CE7002B9C0F /* MapOverlay.swift */; };
 		6EC23D1222544D73002B9C0F /* MapOverlayView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6EC23D1122544D73002B9C0F /* MapOverlayView.swift */; };
@@ -47,7 +51,6 @@
 		6318043D223FDE1700611BB7 /* Places.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Places.plist; sourceTree = "<group>"; };
 		6318043F224013CB00611BB7 /* TabBarViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabBarViewController.swift; sourceTree = "<group>"; };
 		631804412240176E00611BB7 /* SyncViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SyncViewController.swift; sourceTree = "<group>"; };
-		6318044322402F4C00611BB7 /* VitalsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VitalsViewController.swift; sourceTree = "<group>"; };
 		63BF229E22406CD000804460 /* CommandCenterViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CommandCenterViewController.swift; sourceTree = "<group>"; };
 		63BF22A122407A6000804460 /* CocTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CocTableViewCell.swift; sourceTree = "<group>"; };
 		63ED20822204BA57003005BA /* iScout.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = iScout.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -64,6 +67,11 @@
 		63ED20A42204BA59003005BA /* iScoutUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = iScoutUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		63ED20A82204BA59003005BA /* iScoutUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = iScoutUITests.swift; sourceTree = "<group>"; };
 		63ED20AA2204BA59003005BA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		63FEDEC6225A815F001DE578 /* Character.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Character.swift; sourceTree = "<group>"; };
+		63FEDEC9225A83D7001DE578 /* LegendAnnotation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LegendAnnotation.swift; sourceTree = "<group>"; };
+		63FEDECB225A8507001DE578 /* LegendAnnotationView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LegendAnnotationView.swift; sourceTree = "<group>"; };
+		63FEDECD225A85BD001DE578 /* MapLayersViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapLayersViewController.swift; sourceTree = "<group>"; };
+		63FEDECF225A98EE001DE578 /* Lexington.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Lexington.plist; sourceTree = "<group>"; };
 		6E9D3D9E2252EDAA00DAA888 /* Lexington.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Lexington.swift; sourceTree = "<group>"; };
 		6EC23D0F22544CE7002B9C0F /* MapOverlay.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapOverlay.swift; sourceTree = "<group>"; };
 		6EC23D1122544D73002B9C0F /* MapOverlayView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapOverlayView.swift; sourceTree = "<group>"; };
@@ -98,6 +106,7 @@
 			isa = PBXGroup;
 			children = (
 				6318043D223FDE1700611BB7 /* Places.plist */,
+				63FEDECF225A98EE001DE578 /* Lexington.plist */,
 			);
 			path = GPSdata;
 			sourceTree = "<group>";
@@ -107,9 +116,9 @@
 			children = (
 				6318043F224013CB00611BB7 /* TabBarViewController.swift */,
 				63BF229E22406CD000804460 /* CommandCenterViewController.swift */,
-				63ED20872204BA57003005BA /* MapViewController.swift */,
 				631804412240176E00611BB7 /* SyncViewController.swift */,
-				6318044322402F4C00611BB7 /* VitalsViewController.swift */,
+				63FEDECD225A85BD001DE578 /* MapLayersViewController.swift */,
+				63ED20872204BA57003005BA /* MapViewController.swift */,
 			);
 			path = ViewControllers;
 			sourceTree = "<group>";
@@ -145,12 +154,13 @@
 		63ED20842204BA57003005BA /* iScout */ = {
 			isa = PBXGroup;
 			children = (
-				6EC23D0E22544C9E002B9C0F /* Overlays */,
-				6E9D3D9D2252ED8E00DAA888 /* Models */,
-				63ED20852204BA57003005BA /* AppDelegate.swift */,
 				631804452240322400611BB7 /* GPSdata */,
+				6E9D3D9D2252ED8E00DAA888 /* Models */,
+				6EC23D0E22544C9E002B9C0F /* Overlays */,
+				63FEDEC8225A8389001DE578 /* Layers */,
 				63BF22A022407A4000804460 /* CustomCells */,
 				6318044A2240422400611BB7 /* ViewControllers */,
+				63ED20852204BA57003005BA /* AppDelegate.swift */,
 				63ED208F2204BA59003005BA /* Assets.xcassets */,
 				63ED20912204BA59003005BA /* LaunchScreen.storyboard */,
 				63ED20892204BA57003005BA /* Main.storyboard */,
@@ -178,9 +188,19 @@
 			path = iScoutUITests;
 			sourceTree = "<group>";
 		};
+		63FEDEC8225A8389001DE578 /* Layers */ = {
+			isa = PBXGroup;
+			children = (
+				63FEDEC9225A83D7001DE578 /* LegendAnnotation.swift */,
+				63FEDECB225A8507001DE578 /* LegendAnnotationView.swift */,
+			);
+			path = Layers;
+			sourceTree = "<group>";
+		};
 		6E9D3D9D2252ED8E00DAA888 /* Models */ = {
 			isa = PBXGroup;
 			children = (
+				63FEDEC6225A815F001DE578 /* Character.swift */,
 				6E9D3D9E2252EDAA00DAA888 /* Lexington.swift */,
 			);
 			path = Models;
@@ -303,6 +323,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				63ED20932204BA59003005BA /* LaunchScreen.storyboard in Resources */,
+				63FEDED0225A98EE001DE578 /* Lexington.plist in Resources */,
 				63ED20902204BA59003005BA /* Assets.xcassets in Resources */,
 				6318043E223FDE1700611BB7 /* Places.plist in Resources */,
 				63ED208B2204BA57003005BA /* Main.storyboard in Resources */,
@@ -330,16 +351,19 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				63FEDECC225A8507001DE578 /* LegendAnnotationView.swift in Sources */,
 				63BF229F22406CD000804460 /* CommandCenterViewController.swift in Sources */,
 				63180440224013CB00611BB7 /* TabBarViewController.swift in Sources */,
 				63ED20882204BA57003005BA /* MapViewController.swift in Sources */,
+				63FEDECA225A83D7001DE578 /* LegendAnnotation.swift in Sources */,
+				63FEDEC7225A815F001DE578 /* Character.swift in Sources */,
 				63ED20862204BA57003005BA /* AppDelegate.swift in Sources */,
 				6E9D3D9F2252EDAA00DAA888 /* Lexington.swift in Sources */,
+				63FEDECE225A85BD001DE578 /* MapLayersViewController.swift in Sources */,
 				6EC23D1222544D73002B9C0F /* MapOverlayView.swift in Sources */,
 				63ED208E2204BA57003005BA /* iScout.xcdatamodeld in Sources */,
 				63BF22A222407A6000804460 /* CocTableViewCell.swift in Sources */,
 				631804422240176E00611BB7 /* SyncViewController.swift in Sources */,
-				6318044422402F4C00611BB7 /* VitalsViewController.swift in Sources */,
 				6EC23D1022544CE7002B9C0F /* MapOverlay.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
