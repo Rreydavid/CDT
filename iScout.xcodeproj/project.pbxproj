@@ -7,7 +7,14 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		6318043E223FDE1700611BB7 /* Places.plist in Resources */ = {isa = PBXBuildFile; fileRef = 6318043D223FDE1700611BB7 /* Places.plist */; };
+		6306AD84225C183800F27129 /* Medical.plist in Resources */ = {isa = PBXBuildFile; fileRef = 6306AD83225C183800F27129 /* Medical.plist */; };
+		6306AD88225C237400F27129 /* COC.plist in Resources */ = {isa = PBXBuildFile; fileRef = 6306AD87225C237400F27129 /* COC.plist */; };
+		6306AD8A225C24D600F27129 /* Chow.plist in Resources */ = {isa = PBXBuildFile; fileRef = 6306AD89225C24D600F27129 /* Chow.plist */; };
+		6306AD8C225C24E600F27129 /* Supplies.plist in Resources */ = {isa = PBXBuildFile; fileRef = 6306AD8B225C24E600F27129 /* Supplies.plist */; };
+		6306AD8E225C250100F27129 /* Bivouac.plist in Resources */ = {isa = PBXBuildFile; fileRef = 6306AD8D225C250100F27129 /* Bivouac.plist */; };
+		6306AD90225C251200F27129 /* MotorPool.plist in Resources */ = {isa = PBXBuildFile; fileRef = 6306AD8F225C251200F27129 /* MotorPool.plist */; };
+		6306AD92225C252400F27129 /* Fuel.plist in Resources */ = {isa = PBXBuildFile; fileRef = 6306AD91225C252400F27129 /* Fuel.plist */; };
+		6318043E223FDE1700611BB7 /* Route.plist in Resources */ = {isa = PBXBuildFile; fileRef = 6318043D223FDE1700611BB7 /* Route.plist */; };
 		63180440224013CB00611BB7 /* TabBarViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6318043F224013CB00611BB7 /* TabBarViewController.swift */; };
 		631804422240176E00611BB7 /* SyncViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 631804412240176E00611BB7 /* SyncViewController.swift */; };
 		63BF229F22406CD000804460 /* CommandCenterViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63BF229E22406CD000804460 /* CommandCenterViewController.swift */; };
@@ -49,7 +56,14 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		6318043D223FDE1700611BB7 /* Places.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Places.plist; sourceTree = "<group>"; };
+		6306AD83225C183800F27129 /* Medical.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Medical.plist; sourceTree = "<group>"; };
+		6306AD87225C237400F27129 /* COC.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = COC.plist; sourceTree = "<group>"; };
+		6306AD89225C24D600F27129 /* Chow.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Chow.plist; sourceTree = "<group>"; };
+		6306AD8B225C24E600F27129 /* Supplies.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Supplies.plist; sourceTree = "<group>"; };
+		6306AD8D225C250100F27129 /* Bivouac.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Bivouac.plist; sourceTree = "<group>"; };
+		6306AD8F225C251200F27129 /* MotorPool.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = MotorPool.plist; sourceTree = "<group>"; };
+		6306AD91225C252400F27129 /* Fuel.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Fuel.plist; sourceTree = "<group>"; };
+		6318043D223FDE1700611BB7 /* Route.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Route.plist; sourceTree = "<group>"; };
 		6318043F224013CB00611BB7 /* TabBarViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabBarViewController.swift; sourceTree = "<group>"; };
 		631804412240176E00611BB7 /* SyncViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SyncViewController.swift; sourceTree = "<group>"; };
 		63BF229E22406CD000804460 /* CommandCenterViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CommandCenterViewController.swift; sourceTree = "<group>"; };
@@ -107,8 +121,15 @@
 		631804452240322400611BB7 /* GPSdata */ = {
 			isa = PBXGroup;
 			children = (
-				6318043D223FDE1700611BB7 /* Places.plist */,
 				63FEDECF225A98EE001DE578 /* Lexington.plist */,
+				6318043D223FDE1700611BB7 /* Route.plist */,
+				6306AD87225C237400F27129 /* COC.plist */,
+				6306AD83225C183800F27129 /* Medical.plist */,
+				6306AD89225C24D600F27129 /* Chow.plist */,
+				6306AD8B225C24E600F27129 /* Supplies.plist */,
+				6306AD8D225C250100F27129 /* Bivouac.plist */,
+				6306AD8F225C251200F27129 /* MotorPool.plist */,
+				6306AD91225C252400F27129 /* Fuel.plist */,
 			);
 			path = GPSdata;
 			sourceTree = "<group>";
@@ -325,10 +346,17 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				6306AD90225C251200F27129 /* MotorPool.plist in Resources */,
+				6306AD88225C237400F27129 /* COC.plist in Resources */,
 				63ED20932204BA59003005BA /* LaunchScreen.storyboard in Resources */,
 				63FEDED0225A98EE001DE578 /* Lexington.plist in Resources */,
+				6306AD92225C252400F27129 /* Fuel.plist in Resources */,
 				63ED20902204BA59003005BA /* Assets.xcassets in Resources */,
-				6318043E223FDE1700611BB7 /* Places.plist in Resources */,
+				6306AD8A225C24D600F27129 /* Chow.plist in Resources */,
+				6306AD8E225C250100F27129 /* Bivouac.plist in Resources */,
+				6306AD84225C183800F27129 /* Medical.plist in Resources */,
+				6306AD8C225C24E600F27129 /* Supplies.plist in Resources */,
+				6318043E223FDE1700611BB7 /* Route.plist in Resources */,
 				63ED208B2204BA57003005BA /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -544,13 +572,13 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = HCN9AC5X94;
+				DEVELOPMENT_TEAM = XVZV3D2UHJ;
 				INFOPLIST_FILE = iScout/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = Calling.iScout1234;
+				PRODUCT_BUNDLE_IDENTIFIER = Calling.iScout;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -562,13 +590,13 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = HCN9AC5X94;
+				DEVELOPMENT_TEAM = XVZV3D2UHJ;
 				INFOPLIST_FILE = iScout/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = Calling.iScout1234;
+				PRODUCT_BUNDLE_IDENTIFIER = Calling.iScout;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";

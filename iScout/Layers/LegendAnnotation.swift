@@ -10,21 +10,30 @@ import UIKit
 import MapKit
 
 enum LegendType: Int {
-    case misc = 0
-    case ride
-    case food
-    case firstAid
+    case coc = 0
+    case medical
+    case chow
+    case supplies
+    case bivouac
+    case motorPool
+    case fuel
     
     func image() -> UIImage {
         switch self {
-        case .misc:
+        case .coc:
             return #imageLiteral(resourceName: "star")
-        case .ride:
+        case .medical:
             return #imageLiteral(resourceName: "ride")
-        case .food:
+        case .chow:
             return #imageLiteral(resourceName: "food")
-        case .firstAid:
+        case .supplies:
             return #imageLiteral(resourceName: "firstaid")
+        case .bivouac:
+            return #imageLiteral(resourceName: "star")
+        case .motorPool:
+            return #imageLiteral(resourceName: "ride")
+        case .fuel:
+            return #imageLiteral(resourceName: "food")
         }
     }
 }
