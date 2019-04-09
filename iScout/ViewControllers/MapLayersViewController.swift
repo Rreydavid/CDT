@@ -9,7 +9,7 @@
 import UIKit
 
 enum MapLayersType: Int {
-    case mapRoute
+    case mapRoute = 0
     case mapCocLocation
     case mapMedicalLocation
     case mapChowLocation

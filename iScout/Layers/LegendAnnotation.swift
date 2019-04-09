@@ -21,19 +21,19 @@ enum LegendType: Int {
     func image() -> UIImage {
         switch self {
         case .coc:
-            return #imageLiteral(resourceName: "star")
+            return #imageLiteral(resourceName: "coc")
         case .medical:
-            return #imageLiteral(resourceName: "ride")
+            return #imageLiteral(resourceName: "medical")
         case .chow:
-            return #imageLiteral(resourceName: "food")
+            return #imageLiteral(resourceName: "chow")
         case .supplies:
-            return #imageLiteral(resourceName: "firstaid")
+            return #imageLiteral(resourceName: "supplies")
         case .bivouac:
-            return #imageLiteral(resourceName: "star")
+            return #imageLiteral(resourceName: "bivouac")
         case .motorPool:
-            return #imageLiteral(resourceName: "ride")
+            return #imageLiteral(resourceName: "motorPool")
         case .fuel:
-            return #imageLiteral(resourceName: "food")
+            return #imageLiteral(resourceName: "fuel")
         }
     }
 }
