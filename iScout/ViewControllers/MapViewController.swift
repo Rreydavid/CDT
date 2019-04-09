@@ -32,45 +32,123 @@ class MapViewController: UIViewController {
     }
 
     // MARK: - Add methods
-    func addOverlay() {
-        let overlay = MapOverlay(area: lexington)
-        mapView.addOverlay(overlay)
+    func addRoute() {
+        guard let points = Lexington.plist("Route") as? [String] else { return }
+        
+        let cgPoints = points.map { NSCoder.cgPoint(for: $0) }
+        let coords = cgPoints.map { CLLocationCoordinate2DMake(CLLocationDegrees($0.x), CLLocationDegrees($0.y)) }
+        let myPolyline = MKPolyline(coordinates: coords, count: coords.count)
+        
+        mapView.addOverlay(myPolyline)
     }
     
-    func addLayersPins() {
-        guard let layers = Lexington.plist("COCLayers") as? [[String : String]] else { return }
+    //------------------------------------------------------------------------------------------
+    func addCocPin() {
+        guard let layers = Lexington.plist("COC") as? [[String : String]] else { return }
         
         for layer in layers {
             let coordinate = Lexington.parseCoord(dict: layer, fieldName: "location")
             let title = layer["name"] ?? ""
             let typeRawValue = Int(layer["type"] ?? "0") ?? 0
-            let type = LegendType(rawValue: typeRawValue) ?? .misc
+            let type = LegendType(rawValue: typeRawValue) ?? .coc
             let subtitle = layer["subtitle"] ?? ""
             let annotation = LegendAnnotation(coordinate: coordinate, title: title, subtitle: subtitle, type: type)
             mapView.addAnnotation(annotation)
         }
     }
-    
-    func addRoute() {
-     guard let points = Lexington.plist("Places") as? [String] else { return }
-     
-     let cgPoints = points.map { NSCoder.cgPoint(for: $0) }
-     let coords = cgPoints.map { CLLocationCoordinate2DMake(CLLocationDegrees($0.x), CLLocationDegrees($0.y)) }
-     let myPolyline = MKPolyline(coordinates: coords, count: coords.count)
-     
-     mapView.addOverlay(myPolyline)
-     }
-    
+    func addMedicalPin() {
+        guard let layers = Lexington.plist("Medical") as? [[String : String]] else { return }
+        
+        for layer in layers {
+            let coordinate = Lexington.parseCoord(dict: layer, fieldName: "location")
+            let title = layer["name"] ?? ""
+            let typeRawValue = Int(layer["type"] ?? "0") ?? 0
+            let type = LegendType(rawValue: typeRawValue) ?? .medical
+            let subtitle = layer["subtitle"] ?? ""
+            let annotation = LegendAnnotation(coordinate: coordinate, title: title, subtitle: subtitle, type: type)
+            mapView.addAnnotation(annotation)
+        }
+    }
+    func addChowPin() {
+        guard let layers = Lexington.plist("Chow") as? [[String : String]] else { return }
+        
+        for layer in layers {
+            let coordinate = Lexington.parseCoord(dict: layer, fieldName: "location")
+            let title = layer["name"] ?? ""
+            let typeRawValue = Int(layer["type"] ?? "0") ?? 0
+            let type = LegendType(rawValue: typeRawValue) ?? .chow
+            let subtitle = layer["subtitle"] ?? ""
+            let annotation = LegendAnnotation(coordinate: coordinate, title: title, subtitle: subtitle, type: type)
+            mapView.addAnnotation(annotation)
+        }
+    }
+    func addSuppliesPin() {
+        guard let layers = Lexington.plist("Supplies") as? [[String : String]] else { return }
+        
+        for layer in layers {
+            let coordinate = Lexington.parseCoord(dict: layer, fieldName: "location")
+            let title = layer["name"] ?? ""
+            let typeRawValue = Int(layer["type"] ?? "0") ?? 0
+            let type = LegendType(rawValue: typeRawValue) ?? .supplies
+            let subtitle = layer["subtitle"] ?? ""
+            let annotation = LegendAnnotation(coordinate: coordinate, title: title, subtitle: subtitle, type: type)
+            mapView.addAnnotation(annotation)
+        }
+    }
+    func addBivouacPin() {
+        guard let layers = Lexington.plist("Bivouac") as? [[String : String]] else { return }
+        
+        for layer in layers {
+            let coordinate = Lexington.parseCoord(dict: layer, fieldName: "location")
+            let title = layer["name"] ?? ""
+            let typeRawValue = Int(layer["type"] ?? "0") ?? 0
+            let type = LegendType(rawValue: typeRawValue) ?? .bivouac
+            let subtitle = layer["subtitle"] ?? ""
+            let annotation = LegendAnnotation(coordinate: coordinate, title: title, subtitle: subtitle, type: type)
+            mapView.addAnnotation(annotation)
+        }
+    }
+    func addMotorPoolPin() {
+        guard let layers = Lexington.plist("MotorPool") as? [[String : String]] else { return }
+        
+        for layer in layers {
+            let coordinate = Lexington.parseCoord(dict: layer, fieldName: "location")
+            let title = layer["name"] ?? ""
+            let typeRawValue = Int(layer["type"] ?? "0") ?? 0
+            let type = LegendType(rawValue: typeRawValue) ?? .motorPool
+            let subtitle = layer["subtitle"] ?? ""
+            let annotation = LegendAnnotation(coordinate: coordinate, title: title, subtitle: subtitle, type: type)
+            mapView.addAnnotation(annotation)
+        }
+    }
+    func addFuelPin() {
+        guard let layers = Lexington.plist("Fuel") as? [[String : String]] else { return }
+        
+        for layer in layers {
+            let coordinate = Lexington.parseCoord(dict: layer, fieldName: "location")
+            let title = layer["name"] ?? ""
+            let typeRawValue = Int(layer["type"] ?? "0") ?? 0
+            let type = LegendType(rawValue: typeRawValue) ?? .fuel
+            let subtitle = layer["subtitle"] ?? ""
+            let annotation = LegendAnnotation(coordinate: coordinate, title: title, subtitle: subtitle, type: type)
+            mapView.addAnnotation(annotation)
+        }
+    }
+    //------------------------------------------------------------------------------------------
+    /*func addOverlay() {
+        let overlay = MapOverlay(area: lexington)
+        mapView.addOverlay(overlay)
+    }
     func addBoundary() {
         mapView.addOverlay(MKPolygon(coordinates: lexington.boundary, count: lexington.boundary.count))
     }
     
     func addCharacterLocation() {
-        mapView.addOverlay(Character(filename: "BatmanLocations", color: .blue))
-        mapView.addOverlay(Character(filename: "TazLocations", color: .orange))
-        mapView.addOverlay(Character(filename: "TweetyBirdLocations", color: .yellow))
+        mapView.addOverlay(Character(filename: "MedicalLocation", color: .red))
+        //mapView.addOverlay(Character(filename: "BatmanLocations", color: .blue))
+        //mapView.addOverlay(Character(filename: "TazLocations", color: .orange))
     }
-    
+    */
     
     // MARK: Helper methods
     func loadSelectedLayers() {
@@ -79,16 +157,28 @@ class MapViewController: UIViewController {
         
         for option in selectedOptions {
             switch (option) {
-            case .mapOverlay:
-                self.addOverlay()
-            case .mapPins:
-                self.addLayersPins()
             case .mapRoute:
                 self.addRoute()
+            case .mapCocLocation:
+                self.addCocPin()
+            case .mapMedicalLocation:
+                self.addMedicalPin()
+            case .mapChowLocation:
+                self.addChowPin()
+            case .mapSuppliesLocation:
+                self.addSuppliesPin()
+            case .mapBivouacLocation:
+                self.addBivouacPin()
+            case .mapMotorPoolLocation:
+                self.addMotorPoolPin()
+            case .mapFuelLocation:
+                self.addFuelPin()
+                
+            /*case .mapOverlay:
+                self.addOverlay()
             case .mapBoundary:
                 self.addBoundary()
-            case .mapCharacterLocation:
-                self.addCharacterLocation()
+            */
             }
         }
     }
@@ -135,12 +225,4 @@ extension MapViewController: MKMapViewDelegate {
         legendView.canShowCallout = true
         return legendView
     }
-    
-    
-    /*
-    func mapView(_ mapView: MKMapView, rendererFor overlay: MKOverlay) -> MKOverlayRenderer {
-        
-        
-        return MKOverlayRenderer()
-    }*/
 }

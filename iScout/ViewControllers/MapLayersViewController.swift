@@ -9,24 +9,45 @@
 import UIKit
 
 enum MapLayersType: Int {
-    case mapBoundary = 0
-    case mapOverlay
-    case mapPins
-    case mapCharacterLocation
     case mapRoute
+    case mapCocLocation
+    case mapMedicalLocation
+    case mapChowLocation
+    case mapSuppliesLocation
+    case mapBivouacLocation
+    case mapMotorPoolLocation
+    case mapFuelLocation
+    //case mapBoundary = 0
+    //case mapOverlay
+    
+    
     
     func displayName() -> String {
         switch (self) {
-        case .mapBoundary:
-            return "Park Boundary"
-        case .mapOverlay:
-            return "Map Overlay"
-        case .mapPins:
-            return "Attraction Pins"
-        case .mapCharacterLocation:
-            return "Character Location"
         case .mapRoute:
-            return "Route"
+            return "Dog Route"
+        case .mapCocLocation:
+            return "COC"
+        case .mapMedicalLocation:
+            return "First Aid"
+        case .mapChowLocation:
+            return "Chow"
+        case .mapSuppliesLocation:
+            return "Supplies"
+        case .mapBivouacLocation:
+            return "Bivouac"
+        case .mapMotorPoolLocation:
+            return "Motor Pool"
+        case .mapFuelLocation:
+            return "Fuel"
+            
+        //case .mapBoundary:
+          //  return "Park Boundary"
+        //case .mapOverlay:
+          //  return "Map Overlay"
+        
+        
+        
         }
     }
 }
@@ -44,7 +65,7 @@ extension MapLayersViewController: UITableViewDataSource {
     }
     
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return 5
+        return 9
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
