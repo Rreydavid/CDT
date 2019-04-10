@@ -61,7 +61,7 @@
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="W4G-tb-8G5"/>
                     </view>
-                    <tabBarItem key="tabBarItem" title="Map" id="G8u-fT-avI"/>
+                    <tabBarItem key="tabBarItem" title="Map" image="map" selectedImage="map2" id="G8u-fT-avI"/>
                     <connections>
                         <outlet property="mapView" destination="0rz-Yt-BF1" id="CLJ-7g-hD1"/>
                     </connections>
@@ -524,7 +524,7 @@
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="CAO-Kg-76B"/>
                     </view>
-                    <tabBarItem key="tabBarItem" title="COC" id="4G1-I8-318"/>
+                    <tabBarItem key="tabBarItem" title="COC" image="vip" selectedImage="vip2" id="4G1-I8-318"/>
                     <simulatedTabBarMetrics key="simulatedBottomBarMetrics"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="7co-2e-Mfc" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -611,7 +611,7 @@
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="WeJ-pz-9D8"/>
                     </view>
-                    <tabBarItem key="tabBarItem" title="Sync" id="Cvf-av-8Is"/>
+                    <tabBarItem key="tabBarItem" title="Sync" image="sync" selectedImage="sync2" id="Cvf-av-8Is"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="F1v-0X-QUh" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -704,4 +704,12 @@
             <point key="canvasLocation" x="137" y="2381"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="map" width="20" height="20"/>
+        <image name="map2" width="40" height="40"/>
+        <image name="sync" width="20" height="20"/>
+        <image name="sync2" width="40" height="40"/>
+        <image name="vip" width="20" height="20"/>
+        <image name="vip2" width="40" height="40"/>
+    </resources>
 </document>
