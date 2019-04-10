@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<array>
+	<dict>
+		<key>name</key>
+		<string>one</string>
+		<key>location</key>
+		<string>{38.03316, -84.52674}</string>
+		<key>type</key>
+		<string>1</string>
+		<key>subtitle</key>
+		<string>Medical</string>
+	</dict>
+	<dict>
+		<key>name</key>
+		<string>two</string>
+		<key>location</key>
+		<string>{38.02234, -84.47278}</string>
+		<key>type</key>
+		<string>1</string>
+		<key>subtitle</key>
+		<string>Medical</string>
+	</dict>
+	<dict>
+		<key>name</key>
+		<string>three</string>
+		<key>location</key>
+		<string>{38.04649, -84.54160}</string>
+		<key>type</key>
+		<string>1</string>
+		<key>subtitle</key>
+		<string>Medical</string>
+	</dict>
+	<dict>
+		<key>name</key>
+		<string>four</string>
+		<key>location</key>
+		<string>{38.01856, -84.51226}</string>
+		<key>type</key>
+		<string>1</string>
+		<key>subtitle</key>
+		<string>Medical</string>
+	</dict>
+	<dict>
+		<key>name</key>
+		<string>five</string>
+		<key>location</key>
+		<string>{38.04209, -84.50038}</string>
+		<key>type</key>
+		<string>1</string>
+		<key>subtitle</key>
+		<string>Medical</string>
+	</dict>
+	<dict>
+		<key>name</key>
+		<string>six</string>
+		<key>location</key>
+		<string>{38.03100, -84.50936}</string>
+		<key>type</key>
+		<string>1</string>
+		<key>subtitle</key>
+		<string>Medical</string>
+	</dict>
+	<dict>
+		<key>name</key>
+		<string>seven</string>
+		<key>location</key>
+		<string>{38.02972, -84.50674}</string>
+		<key>type</key>
+		<string>1</string>
+		<key>subtitle</key>
+		<string>Medical</string>
+	</dict>
+</array>
+</plist>
