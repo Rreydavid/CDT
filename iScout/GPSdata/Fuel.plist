@@ -1,14 +1,36 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<!DOCTYPE plist PUBLIC "-//Apple Computer//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
-<!--
-   Fuel.plist
-   iScout
-
-   Created by David Mercado on 4/8/19.
-   Copyright (c) 2019 CDT. All rights reserved.
--->
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
 <plist version="1.0">
-    <dict>
-    
-    </dict>
+<array>
+	<dict>
+		<key>name</key>
+		<string>Fuel Point 1</string>
+		<key>location</key>
+		<string>{38.04127, -84.50688}</string>
+		<key>type</key>
+		<string>6</string>
+		<key>subtitle</key>
+		<string>Fuel</string>
+	</dict>
+	<dict>
+		<key>name</key>
+		<string>Speedway</string>
+		<key>location</key>
+		<string>{38.03261, -84.50940}</string>
+		<key>type</key>
+		<string>6</string>
+		<key>subtitle</key>
+		<string>Fuel</string>
+	</dict>
+	<dict>
+		<key>name</key>
+		<string>Speedway</string>
+		<key>location</key>
+		<string>{38.03423, -84.49496}</string>
+		<key>type</key>
+		<string>6</string>
+		<key>subtitle</key>
+		<string>Fuel</string>
+	</dict>
+</array>
 </plist>
