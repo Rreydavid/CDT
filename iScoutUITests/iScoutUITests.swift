@@ -10,12 +10,36 @@
 // TODO: make unit test for checking to see if the tables move up and down
 
 import XCTest
+import UIKit
+import MapKit
 
 class iScoutUITests: XCTestCase {
 
+    // declare the ViewController that's being tested
+    //var testingViewController : UIViewController!
+    
+    // initialize app
+    var app: XCUIApplication!
+    
     override func setUp() {
-        // Put setup code here. This method is called before the invocation of each test method in the class.
+        // run app for UI Tests
+        app = XCUIApplication()
+        app.launch()
+        
+        /*super.setUp()
+        
+        // get the storyboard and ViewController for testing
+        let storyboard: UIStoryboard = UIStoryboard(name: "Main", bundle: Bundle(for: type(of: self)))
+        testingViewController = storyboard.instantiateViewController(withIdentifier: "MapViewController") as UIViewController
 
+        // load the view
+        if(testingViewController != nil){
+            testingViewController.loadView()
+            testingViewController.viewDidLoad()
+            _ = testingViewController.view
+        }*/
+ 
+        
         // In UI tests it is usually best to stop immediately when a failure occurs.
         continueAfterFailure = false
 
@@ -27,11 +51,11 @@ class iScoutUITests: XCTestCase {
 
     override func tearDown() {
         // Put teardown code here. This method is called after the invocation of each test method in the class.
+        //testingViewController = nil
     }
 
     func testExample() {
-        // Use recording to get started writing UI tests.
-        // Use XCTAssert and related functions to verify your tests produce the correct results.
+        
     }
 
 }
