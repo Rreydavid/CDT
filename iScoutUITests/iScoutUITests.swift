@@ -5,6 +5,9 @@
 //  Created by David Mercado on 2/1/19.
 //  Copyright © 2019 CDT. All rights reserved.
 //
+// Reference: https://www.raywenderlich.com/709-ios-unit-testing-and-ui-testing-tutorial
+// TODO: make unit tests for moving the map
+// TODO: make unit test for checking to see if the tables move up and down
 
 import XCTest
 
