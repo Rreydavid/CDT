@@ -1,6 +1,6 @@
 # iScout
 
-This entire project must be ran on Xcode IDE for macOS since this is an iOS application. Upon starting up Xcode the file that must be opened is the 'iScout.xcodeproj'. This is the project workspace that houses all of the confgurations needed to fun the application. 
+This entire project must be ran on Xcode IDE for macOS since this is an iOS application. Upon starting up Xcode the file that must be opened is the 'iScout.xcodeproj'. This is the project workspace that houses all of the confgurations needed to fun the application. Then to run it, simply hit the play button on the Xcode IDE to build and run the application on the simulator. If you get an building error the problem is that you will just simply have to change the 'Bundle Identifier' in the iScout project workspace. Currently the Bundle Identifier is 'Calling.iScout' appending any number(s) should make it run (ie. 'Calling.iScout1234', 'Calling.iScout001', etc.)
 
 There are three main folders iScout, iScoutTests, iScoutUITests. 
 
