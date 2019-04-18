@@ -42,8 +42,11 @@ class CocTableViewCell : UITableViewCell, CLLocationManagerDelegate{
         guard let locValue: CLLocationCoordinate2D = manager.location?.coordinate else {return}
         print("location = \(locValue.latitude) \(locValue.longitude)")
         
-        latStr = String(locValue.latitude)
-        longStr = String(locValue.longitude)
+        var dLat = Double(locValue.latitude).rounded(toPlaces: 5)
+        var dLong = Double(locValue.longitude).rounded(toPlaces: 5)
+        
+        latStr = String(dLat)
+        longStr = String(dLong)
         print("lat: \(latStr)")
         print("lat: \(longStr)")
     }
@@ -53,4 +56,11 @@ class CocTableViewCell : UITableViewCell, CLLocationManagerDelegate{
         // Configure the view for the selected state
     }
     
+}
+
+extension Double{
+    func rounded(toPlaces places: Int) -> Double{
+        let divisor = pow(10.0, Double(places))
+        return(self * divisor).rounded() / divisor
+    }
 }
