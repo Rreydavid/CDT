@@ -11,22 +11,47 @@
 import Foundation
 import UIKit
 
+
 class CommandCenterViewController: UIViewController, UITableViewDataSource, UITableViewDelegate {
-    
-    
-    
+
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
     }
     
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return 3
+        return 8
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: "ReuseableCell", for: indexPath)
             as! CocTableViewCell
+        
+        if(indexPath.row == 0){
+            cell.labelMain?.text = kCoc
+        }
+        else if(indexPath.row == 1){
+            cell.labelMain?.text = kMedical
+        }
+        else if(indexPath.row == 2){
+            cell.labelMain?.text = kChow
+        }
+        else if(indexPath.row == 3){
+            cell.labelMain?.text = kSupplies
+        }
+        else if(indexPath.row == 4){
+            cell.labelMain?.text = kBivouac
+        }
+        else if(indexPath.row == 5){
+            cell.labelMain?.text = kMotorPool
+        }
+        else if(indexPath.row == 6){
+            cell.labelMain?.text = kFuel
+        }
+        else if(indexPath.row == 7){
+            cell.labelMain?.text = kWater
+        }
         return cell
     }
+    
 }

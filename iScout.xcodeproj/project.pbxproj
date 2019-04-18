@@ -17,6 +17,7 @@
 		6318043E223FDE1700611BB7 /* Route.plist in Resources */ = {isa = PBXBuildFile; fileRef = 6318043D223FDE1700611BB7 /* Route.plist */; };
 		63180440224013CB00611BB7 /* TabBarViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6318043F224013CB00611BB7 /* TabBarViewController.swift */; };
 		631804422240176E00611BB7 /* SyncViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 631804412240176E00611BB7 /* SyncViewController.swift */; };
+		63B727CD2268B35400B11D23 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63B727CC2268B35400B11D23 /* Constants.swift */; };
 		63BF229F22406CD000804460 /* CommandCenterViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63BF229E22406CD000804460 /* CommandCenterViewController.swift */; };
 		63BF22A222407A6000804460 /* CocTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63BF22A122407A6000804460 /* CocTableViewCell.swift */; };
 		63ED20862204BA57003005BA /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63ED20852204BA57003005BA /* AppDelegate.swift */; };
@@ -66,6 +67,7 @@
 		6318043D223FDE1700611BB7 /* Route.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Route.plist; sourceTree = "<group>"; };
 		6318043F224013CB00611BB7 /* TabBarViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabBarViewController.swift; sourceTree = "<group>"; };
 		631804412240176E00611BB7 /* SyncViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SyncViewController.swift; sourceTree = "<group>"; };
+		63B727CC2268B35400B11D23 /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
 		63BF229E22406CD000804460 /* CommandCenterViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CommandCenterViewController.swift; sourceTree = "<group>"; };
 		63BF22A122407A6000804460 /* CocTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CocTableViewCell.swift; sourceTree = "<group>"; };
 		63ED20822204BA57003005BA /* iScout.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = iScout.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -178,13 +180,13 @@
 		63ED20842204BA57003005BA /* iScout */ = {
 			isa = PBXGroup;
 			children = (
+				63ED20852204BA57003005BA /* AppDelegate.swift */,
 				631804452240322400611BB7 /* GPSdata */,
 				6E9D3D9D2252ED8E00DAA888 /* Models */,
 				6EC23D0E22544C9E002B9C0F /* Overlays */,
 				63FEDEC8225A8389001DE578 /* Layers */,
 				63BF22A022407A4000804460 /* CustomCells */,
 				6318044A2240422400611BB7 /* ViewControllers */,
-				63ED20852204BA57003005BA /* AppDelegate.swift */,
 				63ED208F2204BA59003005BA /* Assets.xcassets */,
 				63ED20912204BA59003005BA /* LaunchScreen.storyboard */,
 				63ED20892204BA57003005BA /* Main.storyboard */,
@@ -226,6 +228,7 @@
 			children = (
 				63FEDEC6225A815F001DE578 /* Character.swift */,
 				6E9D3D9E2252EDAA00DAA888 /* Lexington.swift */,
+				63B727CC2268B35400B11D23 /* Constants.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -385,6 +388,7 @@
 				63FEDECC225A8507001DE578 /* LegendAnnotationView.swift in Sources */,
 				63BF229F22406CD000804460 /* CommandCenterViewController.swift in Sources */,
 				63180440224013CB00611BB7 /* TabBarViewController.swift in Sources */,
+				63B727CD2268B35400B11D23 /* Constants.swift in Sources */,
 				63ED20882204BA57003005BA /* MapViewController.swift in Sources */,
 				63FEDECA225A83D7001DE578 /* LegendAnnotation.swift in Sources */,
 				63FEDEC7225A815F001DE578 /* Character.swift in Sources */,

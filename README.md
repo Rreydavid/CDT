@@ -15,4 +15,4 @@ Folder iScout houses the main application features, within this folder there are
       
 Folder iScoutTest houses the main test cases for the logic of the application. Currently we have not written any test cases for the logic of the application 
 
-Folder iScoutUITests houses the main test cases for the UI portions of the application. Currently we have not written any test cases for the UI of the application
+Folder iScoutUITests houses the main test cases for the UI portions of the application. Currently we have written two UI test cases. One for the tab items themselves and the other for the different map types
