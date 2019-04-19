@@ -30,8 +30,12 @@ class MapViewController: UIViewController {
         
         mapView.region = region
     }
-
-    // MARK: - Add methods
+    
+    //------------------------------------------------------------------------------------------
+    // MARK: - Add Map Layer
+    //TODO: Combine all of these into one fuction with a switch statement
+    //where a parameter property list name is passed in
+    //display the dog route layer from the proptery list
     func addRoute() {
         guard let points = Lexington.plist("Route") as? [String] else { return }
         
@@ -41,8 +45,7 @@ class MapViewController: UIViewController {
         
         mapView.addOverlay(myPolyline)
     }
-    
-    //------------------------------------------------------------------------------------------
+    //display COC layer from the proptery list
     func addCocPin() {
         guard let layers = Lexington.plist("COC") as? [[String : String]] else { return }
         
@@ -56,6 +59,7 @@ class MapViewController: UIViewController {
             mapView.addAnnotation(annotation)
         }
     }
+    //display medical layer from the proptery list
     func addMedicalPin() {
         guard let layers = Lexington.plist("Medical") as? [[String : String]] else { return }
         
@@ -69,6 +73,7 @@ class MapViewController: UIViewController {
             mapView.addAnnotation(annotation)
         }
     }
+    //display chow layer from the proptery list
     func addChowPin() {
         guard let layers = Lexington.plist("Chow") as? [[String : String]] else { return }
         
@@ -82,6 +87,7 @@ class MapViewController: UIViewController {
             mapView.addAnnotation(annotation)
         }
     }
+    //display supplies layer from the proptery list
     func addSuppliesPin() {
         guard let layers = Lexington.plist("Supplies") as? [[String : String]] else { return }
         
@@ -95,6 +101,7 @@ class MapViewController: UIViewController {
             mapView.addAnnotation(annotation)
         }
     }
+    //display Bivoauc layer from the proptery list
     func addBivouacPin() {
         guard let layers = Lexington.plist("Bivouac") as? [[String : String]] else { return }
         
@@ -108,6 +115,7 @@ class MapViewController: UIViewController {
             mapView.addAnnotation(annotation)
         }
     }
+    //display Motor pool layer from the proptery list
     func addMotorPoolPin() {
         guard let layers = Lexington.plist("MotorPool") as? [[String : String]] else { return }
         
@@ -121,6 +129,7 @@ class MapViewController: UIViewController {
             mapView.addAnnotation(annotation)
         }
     }
+    //display fuel layer from the proptery list
     func addFuelPin() {
         guard let layers = Lexington.plist("Fuel") as? [[String : String]] else { return }
         
@@ -135,6 +144,7 @@ class MapViewController: UIViewController {
         }
     }
     //------------------------------------------------------------------------------------------
+    //TODO: future iterations display a boundry around the base camp as well as add markers (pins)
     /*func addOverlay() {
         let overlay = MapOverlay(area: lexington)
         mapView.addOverlay(overlay)
@@ -145,16 +155,18 @@ class MapViewController: UIViewController {
     
     func addCharacterLocation() {
         mapView.addOverlay(Character(filename: "MedicalLocation", color: .red))
-        //mapView.addOverlay(Character(filename: "BatmanLocations", color: .blue))
-        //mapView.addOverlay(Character(filename: "TazLocations", color: .orange))
+        //mapView.addOverlay(Character(filename: "BLocations", color: .blue))
+        //mapView.addOverlay(Character(filename: "TLocations", color: .orange))
     }
     */
     
+    //------------------------------------------------------------------------------------------
     // MARK: Helper methods
     func loadSelectedLayers() {
         mapView.removeAnnotations(mapView.annotations)
         mapView.removeOverlays(mapView.overlays)
         
+        //used to decide which layer to add
         for option in selectedOptions {
             switch (option) {
             case .mapRoute:
@@ -198,8 +210,10 @@ class MapViewController: UIViewController {
         }
 }
 
+//------------------------------------------------------------------------------------------
 // MARK: - MKMapViewDelegate
 extension MapViewController: MKMapViewDelegate {
+    //function used to decide to either draw a route, polygon (for boundry), or a marker (pin)
     func mapView(_ mapView: MKMapView, rendererFor overlay: MKOverlay) -> MKOverlayRenderer {
         if overlay is MapOverlay {
             return MapOverlayView(overlay: overlay, overlayImage: #imageLiteral(resourceName: "overlay_park"))

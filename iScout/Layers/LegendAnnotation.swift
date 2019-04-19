@@ -9,6 +9,7 @@
 import UIKit
 import MapKit
 
+//used to swithc between layers and apply images
 enum LegendType: Int {
     case coc = 0
     case medical
@@ -44,6 +45,7 @@ class LegendAnnotation: NSObject, MKAnnotation {
     var subtitle: String?
     var type: LegendType
     
+    //used to set properties of certain layers from data in property list
     init(coordinate: CLLocationCoordinate2D, title: String, subtitle: String, type: LegendType) {
         self.coordinate = coordinate
         self.title = title

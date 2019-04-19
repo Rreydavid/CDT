@@ -19,6 +19,7 @@ class CommandCenterViewController: UIViewController, UITableViewDataSource, UITa
         // Do any additional setup after loading the view, typically from a nib.
     }
     
+    //return number of rows in table
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         return 8
     }
@@ -27,6 +28,7 @@ class CommandCenterViewController: UIViewController, UITableViewDataSource, UITa
         let cell = tableView.dequeueReusableCell(withIdentifier: "ReuseableCell", for: indexPath)
             as! CocTableViewCell
         
+        //set text for label on each row for their respective layer
         if(indexPath.row == 0){
             cell.labelMain?.text = kCoc
         }

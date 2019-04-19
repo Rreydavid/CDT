@@ -20,40 +20,34 @@ enum MapLayersType: Int {
     //case mapBoundary = 0
     //case mapOverlay
     
-    
-    
+    //function used to display name for each layer
     func displayName() -> String {
         switch (self) {
         case .mapRoute:
-            return "Dog Route"
+            return kRoute
         case .mapCocLocation:
-            return "COC"
+            return kCOC
         case .mapMedicalLocation:
-            return "First Aid"
+            return kFirstAid
         case .mapChowLocation:
-            return "Chow"
+            return kFood
         case .mapSuppliesLocation:
-            return "Supplies"
+            return kSupply
         case .mapBivouacLocation:
-            return "Bivouac"
+            return kLiving
         case .mapMotorPoolLocation:
-            return "Motor Pool"
+            return kMotorP
         case .mapFuelLocation:
-            return "Fuel"
-            
+            return kFuelPoint
         //case .mapBoundary:
           //  return "Park Boundary"
         //case .mapOverlay:
           //  return "Map Overlay"
-        
-        
-        
         }
     }
 }
 
 class MapLayersViewController: UIViewController {
-    
     var selectedOptions = [MapLayersType]()
 }
 
@@ -64,10 +58,12 @@ extension MapLayersViewController: UITableViewDataSource {
         return 1
     }
     
+    //returns the number of rows for the table
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         return 8
     }
     
+    //used to display names for each layer
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: "OptionCell")!
         
@@ -87,6 +83,7 @@ extension MapLayersViewController: UITableViewDelegate {
         guard let cell = tableView.cellForRow(at: indexPath) else { return }
         guard let mapLayersType = MapLayersType(rawValue: indexPath.row) else { return }
         
+        //display checkmarks for layers that are selected
         if (cell.accessoryType == .checkmark) {
             // Remove option
             selectedOptions = selectedOptions.filter { $0 != mapLayersType}

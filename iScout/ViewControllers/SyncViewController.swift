@@ -5,7 +5,7 @@
 //  Created by David Mercado on 3/18/19.
 //  Copyright © 2019 CDT. All rights reserved.
 //
-// This portion would be used to sync up the bluetooth between app and Raspberry PI
+// This portion would be used to sync up the bluetooth between app and Raspberry PI (GPS)
 
 
 import Foundation
@@ -18,6 +18,7 @@ class SyncViewController: UIViewController, UITableViewDataSource, UITableViewDe
         // Do any additional setup after loading the view, typically from a nib.
     }
     
+    //return number of rows on table
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         return 4
     }

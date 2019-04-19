@@ -13,6 +13,7 @@ class MapOverlay: NSObject, MKOverlay {
     var coordinate: CLLocationCoordinate2D
     var boundingMapRect: MKMapRect
     
+    //this is used to call the function to center map on lexington
     init(area: Lexington) {
         boundingMapRect = area.overlayBoundingMapRect
         coordinate = area.midCoordinate

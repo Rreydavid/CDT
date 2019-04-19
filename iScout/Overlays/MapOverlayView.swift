@@ -12,11 +12,13 @@ import MapKit
 class MapOverlayView: MKOverlayRenderer {
     var overlayImage: UIImage
     
+    //used to overlay images onto the map
     init(overlay:MKOverlay, overlayImage:UIImage) {
         self.overlayImage = overlayImage
         super.init(overlay: overlay)
     }
     
+    //function used to actually drae the map and be able to zoom on lexington
     override func draw(_ mapRect: MKMapRect, zoomScale: MKZoomScale, in context: CGContext) {
         guard let imageReference = overlayImage.cgImage else { return }
         

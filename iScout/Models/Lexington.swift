@@ -24,6 +24,7 @@ class Lexington {
         }
     }
 
+    //used to center the map onto Lexington
     var overlayBoundingMapRect: MKMapRect {
         get {
             let topLeft = MKMapPoint.init(overlayTopLeftCoordinate)
@@ -38,6 +39,7 @@ class Lexington {
         }
     }
 
+    //initialize class with property list given coordinates of Lexington
     init(filename: String) {
         guard let properties = Lexington.plist(filename) as? [String : Any],
             let boundaryPoints = properties["boundary"] as? [String] else { return }
@@ -51,6 +53,7 @@ class Lexington {
         boundary = cgPoints.map { CLLocationCoordinate2DMake(CLLocationDegrees($0.x), CLLocationDegrees($0.y)) }
     }
     
+    //function used to get and open property list data
     static func plist(_ plist: String) -> Any? {
         guard let filePath = Bundle.main.path(forResource: plist, ofType: "plist"),
             let data = FileManager.default.contents(atPath: filePath) else { return nil }
@@ -62,6 +65,7 @@ class Lexington {
         }
     }
     
+    //function used to convert property list data into 2D location
     static func parseCoord(dict: [String: Any], fieldName: String) -> CLLocationCoordinate2D{
         if let coord = dict[fieldName] as? String {
             let point = NSCoder.cgPoint(for: coord)

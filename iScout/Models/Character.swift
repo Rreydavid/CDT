@@ -6,6 +6,7 @@
 //  Copyright © 2019 CDT. All rights reserved.
 //
 
+
 import UIKit
 import MapKit
 
@@ -14,6 +15,7 @@ class Character: MKCircle {
     var name: String?
     var color: UIColor?
     
+    //  This is used to make markers for the map to place down on it
     convenience init(filename: String, color: UIColor) {
         guard let points = Lexington.plist(filename) as? [String] else { self.init(); return }
         
